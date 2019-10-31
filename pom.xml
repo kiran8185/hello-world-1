@@ -205,7 +205,19 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
+         
+    <distributionmanagement>
+      <repository>
+       <id>nexus</id>
+       <name>valaxy releases Nexus Repository</name>
+       <url>http://18.189.192.96:8081/repository/valaxy-releases</url>
+      </repository>
+      <snapshotRepository>
+       <id>nexus</id>
+       <name>valaxy snapshot nexus repository</name>
+       <url>http://18.189.192.96:8081/valaxy-snapshots</url>
+      </snapshotRepository>
+    </distributionmanagement>
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
     <developerConnection>scm:git:git@github.com:jleetutorial/maven-project.git</developerConnection>
