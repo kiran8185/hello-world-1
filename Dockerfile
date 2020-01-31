@@ -1,6 +1,3 @@
 # Pull base image 
-From tomcat:8-jre8 
-
-# Maintainer 
-MAINTAINER "valaxytech@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+From tomcat:8-jre8  
+COPY target/helloworld*.war /usr/local/tomcat/webapps/helloworld.war
