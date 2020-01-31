@@ -1,3 +1,2 @@
-# Pull base image 
-From tomcat:8-jre8  
-COPY target/helloworld*.war /usr/local/tomcat/webapps/helloworld.war
+FROM tomcat:8.0-jre8  
+COPY target/docker_jenkins_pipeline*.war /usr/local/tomcat/webapps/docker_jenkins_pipeline.war
